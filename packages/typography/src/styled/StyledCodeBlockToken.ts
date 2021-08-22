@@ -120,6 +120,7 @@ const colorStyles = (props: IStyledCodeBlockTokenProps & ThemeProps<DefaultTheme
 
 export interface IStyledCodeBlockTokenProps {
   isLight?: boolean;
+  isADiffLine?: boolean;
 }
 
 export const StyledCodeBlockToken = styled.span.attrs({
@@ -137,6 +138,8 @@ export const StyledCodeBlockToken = styled.span.attrs({
   }
 
   ${props => colorStyles(props)};
+
+  ${props => props.isADiffLine && `color: inherit !important;`};
 
   ${props => retrieveComponentStyles(COMPONENT_ID, props)};
 `;

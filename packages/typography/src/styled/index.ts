@@ -17,3 +17,5 @@ export * from './StyledIcon';
 export * from './StyledList';
 export * from './StyledListItem';
 export * from './StyledParagraph';
+export * from './StyledVisuallyHiddenText';
+export * from './StyledCodeBlockDiffMarker';
