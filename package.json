@@ -27,6 +27,7 @@
     "preversion": "yarn test:ci",
     "version": "yarn run build && git add -A"
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "7.15.4",
     "@babel/core": "7.15.5",

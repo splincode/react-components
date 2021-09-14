@@ -58,6 +58,7 @@ describe('ColorpickerDialog', () => {
   });
 
   it('updates the color dialog button preview color', async () => {
+    // Note: hmm looks like preview color not tested.
     const Basic = () => {
       const [color, setColor] = useState<string | IColor>('rgba(23,73,77,1)');
 
